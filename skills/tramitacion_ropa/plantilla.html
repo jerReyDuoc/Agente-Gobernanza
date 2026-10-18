@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Acta de Registro RoPA</title>
+    <style>
+        body { font-family: Arial, sans-serif; max-width: 800px; margin: 40px auto; color: #333; }
+        h1 { color: #1a4d80; border-bottom: 2px solid #1a4d80; padding-bottom: 8px; }
+        .meta { background: #f4f8fc; padding: 12px; border-left: 4px solid #1a4d80; margin: 20px 0; }
+        table { width: 100%; border-collapse: collapse; margin: 20px 0; }
+        th, td { border: 1px solid #ccc; padding: 10px; text-align: left; }
+        th { background: #1a4d80; color: white; width: 30%; }
+        .footer { margin-top: 40px; font-size: 0.85em; color: #666; border-top: 1px solid #ccc; padding-top: 12px; }
+        .firma { margin-top: 60px; }
+        .firma p { border-top: 1px solid #333; width: 300px; padding-top: 6px; }
+    </style>
+</head>
+<body>
+    <h1>Acta de Registro de Actividad de Tratamiento (RoPA)</h1>
+
+    <div class="meta">
+        <strong>ID del registro:</strong> {{id}}<br>
+        <strong>Fecha de generación:</strong> {{fecha_registro}}<br>
+        <strong>Marco normativo:</strong> Ley 21.719 (art. 14) · ISO/IEC 42001 (cláusula 7.5)
+    </div>
+
+    <table>
+        <tr><th>Nombre del tratamiento</th><td>{{nombre_tratamiento}}</td></tr>
+        <tr><th>Categoría del dato</th><td>{{categoria_datos}}</td></tr>
+        <tr><th>Finalidad</th><td>{{finalidad}}</td></tr>
+        <tr><th>Tabla de origen</th><td>{{tabla_origen}}</td></tr>
+        <tr><th>Estado de la solicitud</th><td>{{estado_solicitud}}</td></tr>
+        <tr><th>Observaciones</th><td>{{observaciones}}</td></tr>
+    </table>
+
+    <div class="footer">
+        <p>Este documento constituye el registro formal de la actividad de tratamiento conforme a la
+        Ley 21.719 de Protección de Datos Personales de Chile y la norma ISO/IEC 42001 de Sistemas de
+        Gestión de Inteligencia Artificial.</p>
+        <p>El responsable del tratamiento se compromete a mantener actualizado este registro y a
+        ponerlo a disposición de la autoridad de control cuando lo requiera.</p>
+    </div>
+
+    <div class="firma">
+        <p>Firma del Responsable de Protección de Datos</p>
+    </div>
+</body>
+</html>
