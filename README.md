@@ -371,7 +371,7 @@ El acta se **renderiza como documento formal** en Streamlit (con encabezado, tab
 **Input:**
 > *"Crea un acta RoPA para el tratamiento 'Campaña de reenganche'."*
 
-**Comportamiento esperado:** El agente **no genera el acta**. En su lugar, pregunta al usuario por los 4 campos faltantes (categoría, finalidad, tabla de origen y estado). Evidencia directa de **IE7 (decisiones adaptativas)**.
+**Comportamiento esperado:** El agente **no genera el acta**. En su lugar, pregunta al usuario por los 4 campos faltantes (categoría, finalidad, tabla de origen y estado).
 
 ---
 
